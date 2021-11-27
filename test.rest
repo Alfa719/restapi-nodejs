@@ -1,1 +1,31 @@
 GET http://localhost:3000/mahasiswa
+
+###
+POST http://localhost:3000/mahasiswa
+Content-Type: application/json
+
+{
+    "sin": "1821500076",
+    "name": "Didik Nur Hidayat",
+    "gender": "Male",
+    "address": "Probolinggo, Jawa Timur",
+    "birth_date": "2001-12-04"
+}
+
+###
+GET http://localhost:3000/mahasiswa/1
+
+###
+PATCH http://localhost:3000/mahasiswa/1
+Content-Type: application/json
+
+{
+    "sin": "1821500010",
+    "name": "Muhammad Shobri",
+    "gender": "Male",
+    "address": "Bondowoso, Jawa Timur",
+    "birth_date": "2000-01-03"
+}
+
+###
+DELETE http://localhost:3000/mahasiswa/1
